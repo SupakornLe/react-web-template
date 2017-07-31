@@ -9,6 +9,7 @@ import Dashboard from './containers/DashboardPage';
 import SlaForm from './containers/SlaForm';
 import SlaTeamForm from './containers/SlaTeamForm';
 import SlaTeamSupportForm from './containers/SlaTeamSupportForm';
+import SlaPeriodForm from './containers/SlaPeriodForm';
 
 export default (
   <Route>
@@ -20,6 +21,8 @@ export default (
       <Route path="slaform" component={SlaForm}/>
       <Route path="slateamform" component={SlaTeamForm}/>
       <Route path="slateamsupportform" component={SlaTeamSupportForm}/>
+      <Route path="slaperiodform" component={SlaPeriodForm}/>
+
       <Route path="*" component={NotFoundPage}/>
     </Route>
   </Route>

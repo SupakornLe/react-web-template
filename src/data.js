@@ -14,7 +14,8 @@ const data = {
     { text: 'Table Page', icon: <GridOn/>, link: '/table' },
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},
-    { text: 'SLA Team Support Form', icon: <Web />, link: '/slateamsupportform'}
+    { text: 'SLA Team Support Form', icon: <Web />, link: '/slateamsupportform'},
+    { text: 'Sla Period Form', icon: <Web />, link: '/slaperiodform'}
 
   ],
   tablePage: {
