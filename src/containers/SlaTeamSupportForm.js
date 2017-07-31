@@ -94,7 +94,7 @@ render(){
               />
               </p>
               <p><TimePicker
-                hintText="24hr Format"
+                hintText="12hr Format"
               />
               </p>
             </div>
