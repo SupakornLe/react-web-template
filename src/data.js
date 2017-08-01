@@ -19,7 +19,9 @@ const data = {
     { text: 'Sla Table Page', icon: <Web />, link: '/slatable'},
     { text: 'Team Sla', icon: <Web />, link: '/teamsla'},
     { text: 'Team Sla Edit Team', icon: <Web />, link: '/teamslaeditteam'},
-    { text: 'Team Sla Add Member', icon: <Web />, link: '/teamslaaddmember'}
+    { text: 'Team Sla Add Member', icon: <Web />, link: '/teamslaaddmember'},
+    { text: 'Team Sla Member List', icon: <Web />, link: '/teamslamemberlist'},
+    { text: 'Team Sla User List', icon: <Web />, link: '/teamslauserlist'}
 
   ],
   tablePage: {
