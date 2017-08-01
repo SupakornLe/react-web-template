@@ -11,7 +11,7 @@ export default class TeamSlaEditTeam extends Component{
   submit = () => {
     var {team_level_1,team_level_2} = this.state;
     console.log(this.state);
-    return this.setState({result:team_level_1 + team_level_2});
+    return this.setState({result:team_level_1 + "  " + team_level_2});
   }
 
   render(){
