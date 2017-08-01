@@ -10,6 +10,9 @@ import SlaForm from './containers/SlaForm';
 import SlaTeamForm from './containers/SlaTeamForm';
 import SlaTeamSupportForm from './containers/SlaTeamSupportForm';
 import SlaPeriodForm from './containers/SlaPeriodForm';
+import SlaTable from './containers/SlaTable';
+import TeamSla from './containers/TeamSla';
+import TeamSlaEditTeam from './containers/TeamSlaEditTeam';
 
 export default (
   <Route>
@@ -22,6 +25,9 @@ export default (
       <Route path="slateamform" component={SlaTeamForm}/>
       <Route path="slateamsupportform" component={SlaTeamSupportForm}/>
       <Route path="slaperiodform" component={SlaPeriodForm}/>
+      <Route path="slatable" component={SlaTable}/>
+      <Route path="teamsla" component={TeamSla}/>
+      <Route path="teamslaeditteam" component={TeamSlaEditTeam}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
