@@ -19,10 +19,10 @@ export default class TeamSlaEditTeam extends Component{
     return(
       <div>
         <div>
-          <TextField hintText="Name Level 1" onChange={(e)=>this.setState({team_level_1:e.target.value})} value={team_level_1} />
+          <TextField hintText="Name Level 1" floatingLabelText="Name Level 1" onChange={(e)=>this.setState({team_level_1:e.target.value})} value={team_level_1} />
         </div>
         <div>
-          <TextField hintText="Name Level 2" onChange={(e)=>this.setState({team_level_2:e.target.value})} value={team_level_2} />
+          <TextField hintText="Name Level 2" floatingLabelText="Name Level 2" onChange={(e)=>this.setState({team_level_2:e.target.value})} value={team_level_2} />
         </div>
         <div>
           <RaisedButton label="Sumit" onClick={()=>this.submit()} />
