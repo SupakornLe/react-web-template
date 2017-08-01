@@ -18,7 +18,8 @@ const data = {
     { text: 'Sla Period Form', icon: <Web />, link: '/slaperiodform'},
     { text: 'Sla Table Page', icon: <Web />, link: '/slatable'},
     { text: 'Team Sla', icon: <Web />, link: '/teamsla'},
-    { text: 'Team Sla Edit Team', icon: <Web />, link: '/teamslaeditteam'}
+    { text: 'Team Sla Edit Team', icon: <Web />, link: '/teamslaeditteam'},
+    { text: 'Team Sla Add Member', icon: <Web />, link: '/teamslaaddmember'}
 
   ],
   tablePage: {
