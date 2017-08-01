@@ -10,11 +10,12 @@ export default class TeamSlaEditTeam extends Component{
 
   submit = () => {
     var {team_level_1,team_level_2} = this.state;
+    return this.setState({result:team_level_1 + team_level_2});
     console.log(this.state);
   }
 
   render(){
-    var {team_level_1,team_level_2} = this.state;
+    var {team_level_1,team_level_2,result} = this.state;
     return(
       <div>
         <div>
@@ -25,6 +26,9 @@ export default class TeamSlaEditTeam extends Component{
         </div>
         <div>
           <RaisedButton label="Sumit" onClick={()=>this.submit()} />
+        </div>
+        <div>
+          {result}
         </div>
       </div>
     )
