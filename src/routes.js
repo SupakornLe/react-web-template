@@ -19,6 +19,7 @@ import TeamSlaUserList from './containers/TeamSlaUserList';
 import LeaveTable from './containers/Leave/LeaveTable';
 import HistoryLeaveTable from './containers/Leave/HistoryLeaveTable';
 import ProfileChangePassword from './containers/ProfileAndSetting/ProfileChangePassword';
+import ProfileSetPasswordRemedy from './containers/ProfileAndSetting/ProfileSetPasswordRemedy';
 
 
 export default (
@@ -41,6 +42,7 @@ export default (
       <Route path="leavetable" component={LeaveTable}/>
       <Route path="historyleavetable" component={HistoryLeaveTable}/>
       <Route path="profilechangepassword" component={ProfileChangePassword}/>
+      <Route path="profilesetpasswordremedy" component={ProfileSetPasswordRemedy}/>
 
 
       <Route path="*" component={NotFoundPage}/>
