@@ -18,6 +18,8 @@ import TeamSlaMemberList from './containers/TeamSlaMemberList';
 import TeamSlaUserList from './containers/TeamSlaUserList';
 import LeaveTable from './containers/Leave/LeaveTable';
 import HistoryLeaveTable from './containers/Leave/HistoryLeaveTable';
+import ProfileChangePassword from './containers/ProfileAndSetting/ProfileChangePassword';
+
 
 export default (
   <Route>
@@ -38,6 +40,8 @@ export default (
       <Route path="teamslauserlist" component={TeamSlaUserList}/>
       <Route path="leavetable" component={LeaveTable}/>
       <Route path="historyleavetable" component={HistoryLeaveTable}/>
+      <Route path="profilechangepassword" component={ProfileChangePassword}/>
+
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
