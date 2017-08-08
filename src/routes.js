@@ -20,6 +20,7 @@ import LeaveTable from './containers/Leave/LeaveTable';
 import HistoryLeaveTable from './containers/Leave/HistoryLeaveTable';
 import ProfileChangePassword from './containers/ProfileAndSetting/ProfileChangePassword';
 import ProfileSetPasswordRemedy from './containers/ProfileAndSetting/ProfileSetPasswordRemedy';
+import ProfilePicture from './containers/ProfileAndSetting/ProfilePicture';
 
 
 export default (
@@ -43,6 +44,7 @@ export default (
       <Route path="historyleavetable" component={HistoryLeaveTable}/>
       <Route path="profilechangepassword" component={ProfileChangePassword}/>
       <Route path="profilesetpasswordremedy" component={ProfileSetPasswordRemedy}/>
+      <Route path="profilepicture" component={ProfilePicture}/>
 
 
       <Route path="*" component={NotFoundPage}/>

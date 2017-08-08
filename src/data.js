@@ -25,7 +25,8 @@ const data = {
     { text: 'Leave Table', icon: <Web />, link: '/leavetable'},
     { text: 'History Leave Table', icon: <Web />, link: '/historyleavetable'},
     { text: 'Profile Change Password', icon: <Web />, link: '/profilechangepassword'},
-    { text: 'Profile Change Password', icon: <Web />, link: '/profilesetpasswordremedy'}
+    { text: 'Profile Change Password', icon: <Web />, link: '/profilesetpasswordremedy'},
+    { text: 'Profile Picture', icon: <Web />, link: '/profilepicture'}
 
 
   ],
