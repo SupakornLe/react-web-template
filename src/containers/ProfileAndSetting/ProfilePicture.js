@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
 import TextField from 'material-ui/TextField';
-import ListItem from 'material-ui/List/ListItem';
-import Avatar from 'material-ui/Avatar';
 
 export default class ProfilePicture extends Component{
   constructor(props){
