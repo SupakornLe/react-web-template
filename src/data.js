@@ -21,7 +21,9 @@ const data = {
     { text: 'Team Sla Edit Team', icon: <Web />, link: '/teamslaeditteam'},
     { text: 'Team Sla Add Member', icon: <Web />, link: '/teamslaaddmember'},
     { text: 'Team Sla Member List', icon: <Web />, link: '/teamslamemberlist'},
-    { text: 'Team Sla User List', icon: <Web />, link: '/teamslauserlist'}
+    { text: 'Team Sla User List', icon: <Web />, link: '/teamslauserlist'},
+    { text: 'Leave Table', icon: <Web />, link: '/leavetable'},
+    { text: 'History Leave Table', icon: <Web />, link: '/historyleavetable'}
 
   ],
   tablePage: {

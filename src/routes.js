@@ -16,6 +16,8 @@ import TeamSlaEditTeam from './containers/TeamSlaEditTeam';
 import TeamSlaAddMember from './containers/TeamSlaAddMember';
 import TeamSlaMemberList from './containers/TeamSlaMemberList';
 import TeamSlaUserList from './containers/TeamSlaUserList';
+import LeaveTable from './containers/Leave/LeaveTable';
+import HistoryLeaveTable from './containers/Leave/HistoryLeaveTable';
 
 export default (
   <Route>
@@ -34,6 +36,8 @@ export default (
       <Route path="teamslaaddmember" component={TeamSlaAddMember}/>
       <Route path="teamslamemberlist" component={TeamSlaMemberList}/>
       <Route path="teamslauserlist" component={TeamSlaUserList}/>
+      <Route path="leavetable" component={LeaveTable}/>
+      <Route path="historyleavetable" component={HistoryLeaveTable}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
