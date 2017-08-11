@@ -22,7 +22,8 @@ import ProfileChangePassword from './containers/ProfileAndSetting/ProfileChangeP
 import ProfileSetPasswordRemedy from './containers/ProfileAndSetting/ProfileSetPasswordRemedy';
 import ProfilePicture from './containers/ProfileAndSetting/ProfilePicture';
 import ProfileSignature from './containers/ProfileAndSetting/ProfileSignature';
-
+import BarChartV from './containers/charts/BarChartV';
+import ApproveTaskNoneSr from './containers/TaskNoneSR/ApproveTaskNoneSr';
 
 
 export default (
@@ -32,6 +33,7 @@ export default (
       <IndexRoute component={TablePage}/>
       <Route path="form" component={FormPage}/>
       <Route path="table" component={TablePage}/>
+      <Route path="approvetasknonesr" component={ApproveTaskNoneSr}/>
       <Route path="slaform" component={SlaForm}/>
       <Route path="slateamform" component={SlaTeamForm}/>
       <Route path="slateamsupportform" component={SlaTeamSupportForm}/>
@@ -48,6 +50,8 @@ export default (
       <Route path="profilesetpasswordremedy" component={ProfileSetPasswordRemedy}/>
       <Route path="profilepicture" component={ProfilePicture}/>
       <Route path="profilesignature" component={ProfileSignature}/>
+
+      <Route path="BarChartV" component={BarChartV}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>

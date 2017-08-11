@@ -12,6 +12,7 @@ const data = {
   menus: [
     { text: 'Form Page', icon: <Web/>, link: '/form' },
     { text: 'Table Page', icon: <GridOn/>, link: '/table' },
+    { text: 'Approve Task None Sr', icon: <Web />, link: '/approvetasknonesr'},
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},
     { text: 'SLA Team Support Form', icon: <Web />, link: '/slateamsupportform'},
@@ -27,7 +28,8 @@ const data = {
     { text: 'Profile Change Password', icon: <Web />, link: '/profilechangepassword'},
     { text: 'Profile Change Password', icon: <Web />, link: '/profilesetpasswordremedy'},
     { text: 'Profile Picture', icon: <Web />, link: '/profilepicture'},
-    { text: 'Profile Signature', icon: <Web />, link: '/profilesignature'}
+    { text: 'Profile Signature', icon: <Web />, link: '/profilesignature'},
+    { text: 'BarChart V', icon: <Web />, link: '/BarChartV'}
 
 
 

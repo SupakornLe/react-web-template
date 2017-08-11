@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom'
-import SignatureCanvas from 'react-signature-canvas'
+import SignaturePad from 'signature_pad'
 
 
 export default class ProfileSignature extends Component{
@@ -13,7 +13,10 @@ export default class ProfileSignature extends Component{
       return(
         <div>
           <div>
-            <img style={{maxHeight:400}} src={"https://media.giphy.com/media/h7DyKGq716JMI/giphy.gif"} />
+            <img style={{maxHeight:400}} src={"https://media.giphy.com/media/gsZ798xbl4sPC/giphy.gif"} />
+          </div>
+          <div>
+            <canvas id="signature-pad" class="signature-pad" ></canvas>
           </div>
         </div>
     )

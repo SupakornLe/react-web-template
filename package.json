@@ -13,7 +13,8 @@
     "react-signature-canvas": "^0.1.7",
     "react-table": "^6.5.1",
     "react-tap-event-plugin": "^2.0.1",
-    "recharts": "^1.0.0-alpha.2"
+    "recharts": "^1.0.0-alpha.2",
+    "signature_pad": "^2.2.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
