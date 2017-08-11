@@ -24,6 +24,7 @@ import ProfilePicture from './containers/ProfileAndSetting/ProfilePicture';
 import ProfileSignature from './containers/ProfileAndSetting/ProfileSignature';
 import BarChartV from './containers/charts/BarChartV';
 import ApproveTaskNoneSr from './containers/TaskNoneSR/ApproveTaskNoneSr';
+import RoleMain from './containers/AdminWebComponent/RoleMain';
 
 
 export default (
@@ -50,7 +51,7 @@ export default (
       <Route path="profilesetpasswordremedy" component={ProfileSetPasswordRemedy}/>
       <Route path="profilepicture" component={ProfilePicture}/>
       <Route path="profilesignature" component={ProfileSignature}/>
-
+      <Route path="rolemain" component={RoleMain}/>
       <Route path="BarChartV" component={BarChartV}/>
 
       <Route path="*" component={NotFoundPage}/>
