@@ -4,10 +4,10 @@ import "react-table/react-table.css";
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import ContentClear from 'material-ui/svg-icons/content/clear';
-import UserRoleTable from './UserRoleTable.js';
-import UserRoleButtonFloat from './UserRoleButtonFloat.js';
-import UserRoleCreateForm from './UserRoleCreateForm.js';
-export default class UserRoleMain extends Component{
+import UserTable from './UserTable.js';
+import UserButtonFloat from './UserButtonFloat.js';
+import UserCreateForm from './UserCreateForm.js';
+export default class UserMain extends Component{
   constructor(props){
     super();
     this.state={
@@ -17,9 +17,9 @@ export default class UserRoleMain extends Component{
   renderContent=()=>{
     var {content} = this.state;
     if(content == true){
-      return <UserRoleTable />;
+      return <UserTable />;
     }else {
-      return <UserRoleCreateForm />
+      return <UserCreateForm />
     }
   }
   toggleContent=()=>{
@@ -29,7 +29,7 @@ export default class UserRoleMain extends Component{
     return(
        <div>
           {this.renderContent()}
-          <UserRoleButtonFloat toggleContent={this.toggleContent} content={this.state.content} />
+          <UserButtonFloat toggleContent={this.toggleContent} content={this.state.content} />
        </div>
     )
   }

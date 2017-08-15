@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
-import {UserRoleMainColumns} from './UserRoleMainColumns';
+import {UserColumns} from './UserColumns';
 
 
-export default class UserRoleTable extends Component{
+export default class UserTable extends Component{
   constructor(props){
     super();
       this.state =  {data:[
@@ -18,13 +18,13 @@ export default class UserRoleTable extends Component{
     return(
       <div>
         <div>
-          <h2>Role Management</h2>
+          <h2>User Management</h2>
         </div>
         <div className="table-wrap">
           <ReactTable
             className="-striped -highlight"
             data={this.state.data}
-            columns={UserRoleMainColumns}
+            columns={UserColumns}
              showPagination={false}
           />
       </div>

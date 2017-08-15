@@ -12,12 +12,12 @@ import ContentClear from 'material-ui/svg-icons/content/clear';
       left: 'auto',
       position: 'fixed'}
     }
-  export default class UserRoleButtonFloat extends Component{
+  export default class UserButtonFloat extends Component{
     constructor(props){
       super(props);
     }
     renderButton = () => {
-      return (<FloatingActionButton onTouchTap = {()=>this.props.toggleContent()} style={styles.floatingActionButton}>
+      return (<FloatingActionButton onTouchTap = {()=>this.props.toggleContent()} backgroundColor='#03A9F4' style={styles.floatingActionButton}>
         {
           (this.props.content)?<ContentAdd/>:<ContentClear />
         }

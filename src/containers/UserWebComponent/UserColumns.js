@@ -1,4 +1,4 @@
-export const UserRoleMainColumns = [
+export const UserColumns = [
       {
         Header: 'Role',
         accessor: 'role',
