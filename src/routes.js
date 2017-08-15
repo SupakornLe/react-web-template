@@ -25,7 +25,7 @@ import ProfileSignature from './containers/ProfileAndSetting/ProfileSignature';
 import BarChartV from './containers/charts/BarChartV';
 import ApproveTaskNoneSr from './containers/TaskNoneSR/ApproveTaskNoneSr';
 import RoleMain from './containers/AdminWebComponent/RoleMain';
-
+import UserRoleMain from './containers/UserWebComponent/UserRoleMain';
 
 export default (
   <Route>
@@ -53,6 +53,7 @@ export default (
       <Route path="profilesignature" component={ProfileSignature}/>
       <Route path="rolemain" component={RoleMain}/>
       <Route path="BarChartV" component={BarChartV}/>
+      <Route path="userrolemain" component={UserRoleMain}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
