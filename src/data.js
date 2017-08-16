@@ -11,11 +11,12 @@ import ChevronRight from 'material-ui/svg-icons/navigation/chevron-right';
 const data = {
   menus: [
     { text: 'Form Page', icon: <Web/>, link: '/form' },
-    { text: 'Table Page', icon: <GridOn/>, link: '/table' },
+    { text: 'Table Page', icon: <Web/>, link: '/table' },
     { text: 'Admin Role Main', icon: <GridOn />, link: '/rolemain'},
     { text: 'User Main', icon: <GridOn />, link: '/usermain'},
     { text: 'Notifications Main', icon: <GridOn />, link: 'notificationsmain'},
     { text: 'Asset Main', icon: <GridOn />, link: 'assetmain'},
+    { text: 'Contract Main', icon: <GridOn />, link: 'contractmain'},
     { text: 'Approve Task None Sr', icon: <Web />, link: '/approvetasknonesr'},
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},

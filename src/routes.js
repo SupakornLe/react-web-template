@@ -28,6 +28,7 @@ import RoleMain from './containers/AdminWebComponent/RoleMain';
 import UserMain from './containers/UserWebComponent/UserMain';
 import NotificationsMain from './containers/NotificationsWebComponent/NotificationsMain';
 import AssetMain from './containers/AssetWebComponent/AssetMain'
+import ContractMain from './containers/ContractWebComponent/ContractMain'
 
 export default (
   <Route>
@@ -58,6 +59,7 @@ export default (
       <Route path="usermain" component={UserMain}/>
       <Route path="notificationsmain" component={NotificationsMain}/>
       <Route path="assetmain" component={AssetMain}/>
+      <Route path="contractmain" component={ContractMain}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
