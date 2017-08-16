@@ -15,6 +15,7 @@ const data = {
     { text: 'Admin Role Main', icon: <GridOn />, link: '/rolemain'},
     { text: 'User Main', icon: <GridOn />, link: '/usermain'},
     { text: 'Notifications Main', icon: <GridOn />, link: 'notificationsmain'},
+    { text: 'Asset Main', icon: <GridOn />, link: 'assetmain'},
     { text: 'Approve Task None Sr', icon: <Web />, link: '/approvetasknonesr'},
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},

@@ -27,6 +27,7 @@ import ApproveTaskNoneSr from './containers/TaskNoneSR/ApproveTaskNoneSr';
 import RoleMain from './containers/AdminWebComponent/RoleMain';
 import UserMain from './containers/UserWebComponent/UserMain';
 import NotificationsMain from './containers/NotificationsWebComponent/NotificationsMain';
+import AssetMain from './containers/AssetWebComponent/AssetMain'
 
 export default (
   <Route>
@@ -56,6 +57,7 @@ export default (
       <Route path="BarChartV" component={BarChartV}/>
       <Route path="usermain" component={UserMain}/>
       <Route path="notificationsmain" component={NotificationsMain}/>
+      <Route path="assetmain" component={AssetMain}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>

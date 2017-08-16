@@ -13,8 +13,8 @@ const styles = {
     position: 'fixed'}
   }
 
-export default class NotificationsButtonFloat extends Component {
-  constructor(props){
+export default class AssetButtonFloat extends Component {
+  constructor(props) {
     super();
   }
   renderButton=()=>{
@@ -24,7 +24,7 @@ export default class NotificationsButtonFloat extends Component {
       }
     </FloatingActionButton>);
   }
-
+  
   render(){
     return(
       <div>
