@@ -27,8 +27,9 @@ import ApproveTaskNoneSr from './containers/TaskNoneSR/ApproveTaskNoneSr';
 import RoleMain from './containers/AdminWebComponent/RoleMain';
 import UserMain from './containers/UserWebComponent/UserMain';
 import NotificationsMain from './containers/NotificationsWebComponent/NotificationsMain';
-import AssetMain from './containers/AssetWebComponent/AssetMain'
-import ContractMain from './containers/ContractWebComponent/ContractMain'
+import AssetMain from './containers/AssetWebComponent/AssetMain';
+import ContractMain from './containers/ContractWebComponent/ContractMain';
+import ContactMain from './containers/ContactWebComponent/ContactMain';
 
 export default (
   <Route>
@@ -60,6 +61,7 @@ export default (
       <Route path="notificationsmain" component={NotificationsMain}/>
       <Route path="assetmain" component={AssetMain}/>
       <Route path="contractmain" component={ContractMain}/>
+      <Route path="contactmain" component={ContactMain}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>
