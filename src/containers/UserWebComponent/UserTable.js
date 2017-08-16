@@ -8,9 +8,9 @@ export default class UserTable extends Component{
   constructor(props){
     super();
       this.state =  {data:[
-      {sid:1,role:'ACE',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:00:00'},
-      {sid:2,role:'CCD',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:22:00'},
-      {sid:3,role:'GSP',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:55:00'},
+      {sid:1,user:'Nut',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:00:00'},
+      {sid:2,user:'Mas',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:22:00'},
+      {sid:3,user:'Nat',created_by:'Supakorn Lelasornchai', created_datetime:'2017-07-01 08:55:00'},
       ]}
   }
 
@@ -26,6 +26,14 @@ export default class UserTable extends Component{
             data={this.state.data}
             columns={UserColumns}
              showPagination={false}
+             SubComponent={(row) => {
+               return (
+                 <div style={{padding: '20px'}}>
+                   <em>{row.row.created_by}</em><br />
+                   <em>{row.row.created_datetime}</em><br />
+                 </div>
+               )
+             }}
           />
       </div>
     </div>

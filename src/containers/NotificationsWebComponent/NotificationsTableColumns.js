@@ -1,7 +1,7 @@
-export const UserColumns = [
+export const NotificationsTableColumns = [
       {
-        Header: 'User',
-        accessor: 'user',
+        Header: 'Notifications',
+        accessor: 'notifications',
       }
       ,
       {

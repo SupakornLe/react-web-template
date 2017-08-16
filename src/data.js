@@ -12,8 +12,9 @@ const data = {
   menus: [
     { text: 'Form Page', icon: <Web/>, link: '/form' },
     { text: 'Table Page', icon: <GridOn/>, link: '/table' },
-    { text: 'Admin Role Main', icon: <Web />, link: '/rolemain'},
-    { text: 'User Main', icon: <Web />, link: '/usermain'},
+    { text: 'Admin Role Main', icon: <GridOn />, link: '/rolemain'},
+    { text: 'User Main', icon: <GridOn />, link: '/usermain'},
+    { text: 'Notifications Main', icon: <GridOn />, link: 'notificationsmain'},
     { text: 'Approve Task None Sr', icon: <Web />, link: '/approvetasknonesr'},
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},
