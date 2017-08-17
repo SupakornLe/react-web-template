@@ -1,18 +1,18 @@
 import React,{Component} from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-export default class NotificationsCreateForm extends Component {
+export default class MonthCreateForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {notifications:''}
+    this.state = {month:''}
   }
   submit = () => {
-   var {notifications} = this.state;
-   console.log(this.state.notifications);
+   var {month} = this.state;
+   console.log(this.state.month);
   }
   renderButtonSubmit = () => {
-   var {notifications} = this.state;
-   if(notifications.length>4!=""){
+   var {month} = this.state;
+   if(month.length>4!=""){
      return (<div>
        <RaisedButton fullWidth={true} primary={true} backgroundColor='#03A9F4' label="Save" onClick={()=>this.submit()} />
      </div>);
@@ -21,14 +21,14 @@ export default class NotificationsCreateForm extends Component {
    }
   }
   render(){
-    var {notifications}=this.state;
+    var {month}=this.state;
     return(
       <div>
-      <div><h2>Create Notifications</h2></div>
+      <div><h2>Create Month</h2></div>
       <div>
-          <TextField value={notifications}
-            onChange={(e)=>this.setState({notifications:e.target.value})}
-            floatingLabelText="Notifications" hintText="Notifications" style={{width:'100%'}} type="text"  />
+          <TextField value={month}
+            onChange={(e)=>this.setState({month:e.target.value})}
+            floatingLabelText="Month" hintText="Month" style={{width:'100%'}} type="text"  />
       </div>
             <div>
               {this.renderButtonSubmit()}

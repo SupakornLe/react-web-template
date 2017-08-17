@@ -4,10 +4,11 @@ import "react-table/react-table.css";
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import ContentClear from 'material-ui/svg-icons/content/clear';
-import NotificationsTable from './NotificationsTable.js';
-import NotificationsCreateForm from './NotificationsCreateForm.js';
-import NotificationsButtonFloat from './NotificationsButtonFloat.js';
-export default class NotificationsMain extends Component {
+import MonthTable from './MonthTable.js';
+import MonthCreateForm from './MonthCreateForm.js';
+import MonthButtonFloat from './MonthButtonFloat.js';
+
+export default class MonthMain extends Component {
   constructor(props) {
     super(props);
     this.state={content:true}
@@ -18,16 +19,16 @@ export default class NotificationsMain extends Component {
   renderContent=()=>{
     var {content}=this.state;
     if (content==true){
-      return <NotificationsTable/>;
+      return <MonthTable/>;
     }else {
-      return <NotificationsCreateForm/>
+      return <MonthCreateForm/>
     }
   }
   render(){
     return(
       <div>
         {this.renderContent()}
-        <NotificationsButtonFloat toggleContent={this.toggleContent} content={this.state.content}/>
+        <MonthButtonFloat toggleContent={this.toggleContent} content={this.state.content}/>
       </div>
     )
   }

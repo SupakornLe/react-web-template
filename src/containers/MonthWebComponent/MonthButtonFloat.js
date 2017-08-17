@@ -12,9 +12,8 @@ const styles = {
     left: 'auto',
     position: 'fixed'}
   }
-
-export default class NotificationsButtonFloat extends Component {
-  constructor(props){
+export default class MonthButtonFloat extends Component {
+  constructor(props) {
     super(props);
   }
   renderButton=()=>{
@@ -24,7 +23,6 @@ export default class NotificationsButtonFloat extends Component {
       }
     </FloatingActionButton>);
   }
-
   render(){
     return(
       <div>
