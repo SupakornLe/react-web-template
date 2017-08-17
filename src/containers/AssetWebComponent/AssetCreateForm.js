@@ -3,7 +3,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 export default class AssetCreateForm extends Component{
   constructor(props) {
-    super();
+    super(props);
     this.state = {asset:''}
   }
   submit = () => {

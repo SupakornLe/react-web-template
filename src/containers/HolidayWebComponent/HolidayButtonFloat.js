@@ -13,8 +13,8 @@ const styles = {
     position: 'fixed'}
   }
 
-export default class AssetButtonFloat extends Component {
-  constructor(props) {
+export default class HolidayButtonFloat extends Component {
+  constructor(props){
     super(props);
   }
   renderButton=()=>{
@@ -24,7 +24,6 @@ export default class AssetButtonFloat extends Component {
       }
     </FloatingActionButton>);
   }
-
   render(){
     return(
       <div>

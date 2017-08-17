@@ -6,7 +6,7 @@ import {roleMainColumns} from './RoleMainColumns';
 
 export default class RoleTable extends Component{
   constructor(props){
-    super();
+    super(props);
       this.state =  {data:[
       {sid:1,role:'ACE',created_by:'Autsakorn Tanyianniti', created_datetime:'2017-07-01 08:00:00'},
       {sid:2,role:'CCD',created_by:'Autsakorn Tanyianniti', created_datetime:'2017-07-01 08:22:00'},

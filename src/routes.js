@@ -30,6 +30,7 @@ import NotificationsMain from './containers/NotificationsWebComponent/Notificati
 import AssetMain from './containers/AssetWebComponent/AssetMain';
 import ContractMain from './containers/ContractWebComponent/ContractMain';
 import ContactMain from './containers/ContactWebComponent/ContactMain';
+import Holiday from './containers/HolidayWebComponent/HolidayMain';
 
 export default (
   <Route>
@@ -62,6 +63,7 @@ export default (
       <Route path="assetmain" component={AssetMain}/>
       <Route path="contractmain" component={ContractMain}/>
       <Route path="contactmain" component={ContactMain}/>
+      <Route path="holidaymain" component={Holiday}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>

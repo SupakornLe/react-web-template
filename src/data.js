@@ -18,6 +18,7 @@ const data = {
     { text: 'Asset Main', icon: <GridOn />, link: 'assetmain'},
     { text: 'Contract Main', icon: <GridOn />, link: 'contractmain'},
     { text: 'Contact Main', icon: <GridOn />, link: 'contactmain'},
+    { text: 'Holiday Main', icon: <GridOn />, link: 'holidaymain'},
     { text: 'Approve Task None Sr', icon: <Web />, link: '/approvetasknonesr'},
     { text: 'SLA Form', icon: <Web />, link: '/slaform'},
     { text: 'SLA Team Form', icon: <Web />, link: '/slateamform'},

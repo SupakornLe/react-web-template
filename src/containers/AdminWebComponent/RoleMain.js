@@ -9,7 +9,7 @@ import RoleButtonFloat from './RoleButtonFloat.js';
 import RoleCreateForm from './RoleCreateForm.js';
 export default class RoleMain extends Component{
   constructor(props){
-    super();
+    super(props);
     this.state={
       content:true
     }
