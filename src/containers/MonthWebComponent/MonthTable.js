@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import {MonthTableColumns} from './MonthTableColumns';
+import MonthDetail from './MonthDetail';
 export default class MonthTable extends Component {
   constructor(props) {
     super(props);
@@ -26,8 +27,7 @@ export default class MonthTable extends Component {
              SubComponent={(row) => {
                return (
                  <div style={{padding: '20px'}}>
-                   <em>{row.row.created_by}</em><br />
-                   <em>{row.row.created_datetime}</em><br />
+                   <MonthDetail sid={row.original.sid} />
                  </div>
                )
              }}

@@ -10,7 +10,8 @@ import ContentClear from 'material-ui/svg-icons/content/clear';
       right: 20,
       bottom: 20,
       left: 'auto',
-      position: 'fixed'}
+      position: 'fixed',
+      zIndex:1000}
     }
   export default class UserButtonFloat extends Component{
     constructor(props){
