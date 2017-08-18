@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import {UserColumns} from './UserColumns';
-
+import UserDetail from './UserDetail';
 
 export default class UserTable extends Component{
   constructor(props){
@@ -29,8 +29,7 @@ export default class UserTable extends Component{
              SubComponent={(row) => {
                return (
                  <div style={{padding: '20px'}}>
-                   <em>{row.row.created_by}</em><br />
-                   <em>{row.row.created_datetime}</em><br />
+                   <UserDetail sid={row.original.sid} />
                  </div>
                )
              }}
