@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import {HolidayTableColumns} from './HolidayTableColumns';
-import HolidayDetail from './HolidayDetail.js';
+import HolidayDetail from './HolidayDetail';
 export default class HolidayTable extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +26,9 @@ export default class HolidayTable extends Component {
              showPagination={false}
              SubComponent={(row) => {
                return (
-                 <HolidayDetail />
+                 <div style={{padding: '20px'}}>
+                   <HolidayDetail sid={row.original.sid} />
+                 </div>
                )
              }}
           />
