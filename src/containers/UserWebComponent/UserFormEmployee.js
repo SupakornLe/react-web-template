@@ -8,9 +8,10 @@ export default class UserFormEmployee extends Component {
     this.props.setEmployee(value);
   }
   render(){
+    var {employee} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setEmployee} hintText="Employee" floatingLabelText="Employee" />
+        <TextField value={employee} onChange={this.setEmployee} hintText="Employee" floatingLabelText="Employee" style={{width:'100%'}} type="text" />
       </div>
     )
   }

@@ -8,9 +8,10 @@ export default class UserFormEmployee extends Component {
     this.props.setMobile(value);
   }
   render(){
+    var {mobile} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setMobile} hintText="Mobile" floatingLabelText="Mobile" />
+        <TextField value={mobile} onChange={this.setMobile} hintText="Mobile" floatingLabelText="Mobile" style={{width:'100%'}} type="text" />
       </div>
     )
   }

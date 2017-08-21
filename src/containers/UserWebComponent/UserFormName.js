@@ -8,9 +8,10 @@ export default class UserFormName extends Component {
     this.props.setName(value);
   }
   render(){
+    var {name} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setName} hintText="Name" floatingLabelText="Name" />
+        <TextField value={name} onChange={this.setName} hintText="Name" floatingLabelText="Name" style={{width:'100%'}} type="text" />
       </div>
     )
   }

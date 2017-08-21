@@ -6,8 +6,7 @@ export default class MonthDetail extends Component {
   constructor(props) {
     super(props);
     this.state ={
-      sid:this.props.sid,
-      month_name_th:'',month_name_en:'',month_name_short:''
+      sid:'',month_name_th:'',month_name_en:'',month_name_short:'',loaded:false
     }
   }
   componentDidMount(){
@@ -15,19 +14,25 @@ export default class MonthDetail extends Component {
   }
   loadData=()=>{
     console.log('loadData', this.state.sid);
-    this.setState({month_name_th:'สิงหาคม',month_name_en:'August',month_name_short:'AUG'});
+    this.setState({month_name_th:'สิงหาคม',month_name_en:'August',month_name_short:'AUG',loaded:true});
   }
-  setMonthNameTh=(month_name_th)=>this.setState({month_name_th});
-  setMonthNameEn=(month_name_en)=>this.setState({month_name_en});
-  setMonthNameShort=(month_name_short)=>this.setMonthNameShort({month_name_short});
+  setMonthNameTh=(month_name_th)=>this.setState({month_name_th})
+  setMonthNameEn=(month_name_en)=>this.setState({month_name_en})
+  setMonthNameShort=(month_name_short)=>this.setMonthNameShort({month_name_short})
   render(){
-    var {month_name_th,month_name_en,month_name_short}=this.state;
+    var {month_name_th,month_name_en,month_name_short,loaded}=this.state;
+    if(loaded){
     return(
       <div>
-        <MonthFormNameTh value={month_name_th} setMonthNameTh={this.setMonthNameTh} />
-        <MonthFormNameEn value={month_name_en} setMonthNameEn={this.setMonthNameEn} />
-        <MonthFormNameShort value={month_name_short} setMonthNameShort={this.setMonthNameShort} />
+        <div>
+          <MonthFormNameTh month_name_th={month_name_th} setMonthNameTh={this.setMonthNameTh} />
+          <MonthFormNameEn month_name_en={month_name_en} setMonthNameEn={this.setMonthNameEn} />
+          <MonthFormNameShort month_name_short={month_name_short} setMonthNameShort={this.setMonthNameShort} />
+        </div>
       </div>
-    )
+      );
+    }else{
+      return (<div>Loading...</div>)
+    }
   }
 }

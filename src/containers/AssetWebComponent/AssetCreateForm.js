@@ -32,8 +32,8 @@ export default class AssetCreateForm extends Component{
       <div>
         <div><h2>Create Asset</h2></div>
           <AssetFormType type={type} setType={this.setType} />
-          <AssetFormItem type={item} setItem={this.setItem} />
-          <AssetFormProduct type={product} setProduct={this.setProduct} />
+          <AssetFormItem item={item} setItem={this.setItem} />
+          <AssetFormProduct product={product} setProduct={this.setProduct} />
           <div>
               {this.renderButtonSubmit()}
           </div>

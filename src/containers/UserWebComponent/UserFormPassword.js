@@ -9,9 +9,10 @@ export default class UserFormPassword extends Component{
     this.props.setPassword(value);
   }
   render(){
+    var {password} = this.props;
     return(
       <div>
-        <TextField type="password" value={this.props.value} onChange={this.setPassword} hintText={"Password"} floatingLabelText="Password" />
+        <TextField type="password" value={password} onChange={this.setPassword} hintText={"Password"} floatingLabelText="Password" style={{width:'100%'}} />
       </div>
     )
   }

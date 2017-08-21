@@ -6,14 +6,14 @@ import AssetFormProduct from './AssetFormProduct';
 export default class AssetDetail extends Component {
   constructor(props){
     super(props);
-    this.state = {sid:'', type:'', item:'', product:'', loaded:false};
+    this.state = {sid:'', type:'', item:'', product:'', loaded:false}
   }
 
   componentDidMount(){
     this.loadData();
   }
-
   loadData = () => {
+    console.log('loadData', this.state.sid);
     this.setState({type:'Hardware', item:'PC', product:'lenovo', loaded:true});
 
   }
@@ -24,7 +24,8 @@ export default class AssetDetail extends Component {
     var {type, item, product, loaded} = this.state;
     console.log('debug type',type);
     if(loaded){
-      return (<div>
+      return (
+        <div>
           <div>
             <AssetFormType setType={this.setType} type={type} />
             <AssetFormItem setItem={this.setItem} item={item} />

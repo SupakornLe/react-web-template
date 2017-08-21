@@ -9,9 +9,10 @@ export default class UserFormEmail extends Component{
     this.props.setEmail(value);
   }
   render(){
+    var {email} = this.props;
     return(
-      <div className="" style={{textAlign:''}}>
-        <TextField value={this.props.value} onChange={this.setEmail} hintText="Email" floatingLabelText="Email" />
+      <div>
+        <TextField value={email} onChange={this.setEmail} hintText="Email" floatingLabelText="Email" style={{width:'100%'}} type="text" />
       </div>
     )
   }

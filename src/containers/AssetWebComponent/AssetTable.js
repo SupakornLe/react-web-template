@@ -6,7 +6,7 @@ import AssetDetail from './AssetDetail';
 
 export default class AssetTable extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state =  {data:[
       {sid:1,asset:'knvdodsknev',created_by:'Nut', created_datetime:'2017-07-01 08:00:00'},
       {sid:2,asset:'fewefvewwev',created_by:'Mas', created_datetime:'2017-04-01 15:22:00'},

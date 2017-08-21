@@ -8,9 +8,10 @@ export default class MonthFormNameShort extends Component {
     this.props.setMonthNameShort(value);
   }
   render(){
+    var {month_name_short} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setMonthNameShort} hintText="Name Short" floatingLabelText="Name Short" />
+        <TextField value={month_name_short} onChange={this.setMonthNameShort} hintText="Name Short" floatingLabelText="Name Short" style={{width:'100%'}} type="text" />
       </div>
     )
   }

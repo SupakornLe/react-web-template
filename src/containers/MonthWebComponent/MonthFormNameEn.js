@@ -8,9 +8,10 @@ export default class MonthFormNameEn extends Component {
     this.props.setMonthNameEn(value);
   }
   render(){
+    var {month_name_en} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setMonthNameEn} hintText="Month EN" floatingLabelText="Month EN" />
+        <TextField value={month_name_en} onChange={this.setMonthNameEn} hintText="Month EN" floatingLabelText="Month EN" style={{width:'100%'}} type="text" />
       </div>
     )
   }
