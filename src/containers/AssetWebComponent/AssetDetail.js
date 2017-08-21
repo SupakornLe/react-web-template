@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 
 import AssetFormType from './AssetFormType';
 import AssetFormItem from './AssetFormItem';
-
+import AssetFormProduct from './AssetFormProduct';
 export default class AssetDetail extends Component {
   constructor(props){
     super(props);
-    this.state = {sid:'', type:'', item:'', loaded:false};
+    this.state = {sid:'', type:'', item:'', product:'', loaded:false};
   }
 
   componentDidMount(){
@@ -14,19 +14,21 @@ export default class AssetDetail extends Component {
   }
 
   loadData = () => {
-    this.setState({sid:3,type:'fewfhtjynrt',created_by:'Nat', created_datetime:'2017-01-01 18:55:00', loaded:true});
+    this.setState({type:'Hardware', item:'PC', product:'lenovo', loaded:true});
 
   }
   setType = (type) => this.setState({type})
   setItem = (item) => this.setState({item})
+  setProduct = (product) => this.setState({product})
   render(){
-    var {type,loaded} = this.state;
+    var {type, item, product, loaded} = this.state;
     console.log('debug type',type);
     if(loaded){
       return (<div>
           <div>
             <AssetFormType setType={this.setType} type={type} />
             <AssetFormItem setItem={this.setItem} item={item} />
+            <AssetFormProduct setProduct={this.setProduct} product={product} />
           </div>
         </div>);
     }else{

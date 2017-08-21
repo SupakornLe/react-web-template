@@ -4,9 +4,9 @@ export default class AssetFormItem extends Component {
   constructor(props) {
     super(props);
   }
-setItem=(e,value)=>{
-  this.props.setItem(value);
-}
+  setItem=(e,value)=>{
+    this.props.setItem(value);
+  }
   render(){
     var {item}=this.props;
     return(

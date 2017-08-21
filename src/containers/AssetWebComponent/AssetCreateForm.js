@@ -3,10 +3,11 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import AssetFormType from './AssetFormType';
 import AssetFormItem from './AssetFormItem';
+import AssetFormProduct from './AssetFormProduct';
 export default class AssetCreateForm extends Component{
   constructor(props) {
     super(props);
-    this.state = {type:'', item:''}
+    this.state = {type:'', item:'', product:''}
   }
   submit = () => {
    var {type} = this.state;
@@ -23,14 +24,16 @@ export default class AssetCreateForm extends Component{
    }
   }
   setType = (type) => this.setState({type})
-  setItem = (e, item) => this.setState({item})
+  setItem = (item) => this.setState({item})
+  setProduct = (product) => this.setState({product})
   render(){
-    var {type, item} = this.state;
+    var {type, item, product} = this.state;
     return(
       <div>
         <div><h2>Create Asset</h2></div>
           <AssetFormType type={type} setType={this.setType} />
           <AssetFormItem type={item} setItem={this.setItem} />
+          <AssetFormProduct type={product} setProduct={this.setProduct} />
           <div>
               {this.renderButtonSubmit()}
           </div>
