@@ -8,9 +8,11 @@ export default class FormType extends Component {
     this.props.setType(value);
   }
   render(){
+    var {type} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setType} hintText="Type" floatingLabelText="Type" />
+        <TextField value={type} onChange={this.setType} hintText="Type"
+        floatingLabelText="Type"  style={{width:'100%'}} type="text"  />
       </div>
     )
   }

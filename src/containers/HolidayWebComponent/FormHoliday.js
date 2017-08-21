@@ -8,9 +8,11 @@ export default class FormHoliday extends Component {
     this.props.setHoliday(value);
   }
   render(){
+    var {holiday} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setHoliday} hintText="Holiday" floatingLabelText="Holiday" />
+        <TextField value={holiday} onChange={this.setHoliday} hintText="Holiday"
+        floatingLabelText="Holiday"  style={{width:'100%'}} type="text" />
       </div>
     )
   }

@@ -10,9 +10,19 @@ export default class HolidayTable extends Component {
     {sid:1,holiday:'knvdkvnodsknv',created_by:'Nut', created_datetime:'2017-07-01 08:00:00'},
     {sid:2,holiday:'vdsvmdokvnmdsv',created_by:'Mas', created_datetime:'2017-04-01 15:22:00'},
     {sid:3,holiday:'sdvmkdnvldsv',created_by:'Nat', created_datetime:'2017-01-01 18:55:00'},
-    ]}
+    ],
+    loaded:false
+    }
+  }
+  componentDidMount(){
+    this.loadData();
+  }
+  loadData = () => {
+    //LOAD DATA FROM SERVER
+    this.setState({ loaded:true});
   }
   render(){
+    if(this.state.loaded){
     return(
       <div>
         <div>
@@ -35,5 +45,8 @@ export default class HolidayTable extends Component {
       </div>
     </div>
     )
+    }else{
+      return (<div>Loading...</div>);
+    }
   }
 }

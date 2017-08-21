@@ -7,15 +7,24 @@ import TypeItemProductDetail from './TypeItemProductDetail';
 
 export default class TypeItemProductTable extends Component{
   constructor(props){
-    super();
+    super(props);
       this.state =  {data:[
       {sid:1,role:'ACE',created_by:'Autsakorn Tanyianniti', created_datetime:'2017-07-01 08:00:00'},
       {sid:2,role:'CCD',created_by:'Autsakorn Tanyianniti', created_datetime:'2017-07-01 08:22:00'},
       {sid:3,role:'GSP',created_by:'Autsakorn Tanyianniti', created_datetime:'2017-07-01 08:55:00'},
-      ]}
+      ],
+      loaded:false
+    }
   }
-
+  componentDidMount(){
+    this.loadData();
+  }
+  loadData = () => {
+    //LOAD DATA FROM SERVER
+    this.setState({ loaded:true});
+  }
   render(){
+    if(this.state.loaded){
     return(
       <div>
         <div>
@@ -38,5 +47,8 @@ export default class TypeItemProductTable extends Component{
       </div>
     </div>
     )
+    }else{
+      return (<div>Loading...</div>);
+    }
   }
 }

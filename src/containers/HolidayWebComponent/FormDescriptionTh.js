@@ -8,9 +8,11 @@ export default class FormDescriptionTh extends Component {
     this.props.setDescriptionTh(value);
   }
   render(){
+    var {description_th} = this.props;
     return(
       <div>
-        <TextField value={this.props.value} onChange={this.setDescriptionTh} hintText="Description TH" floatingLabelText="Description TH" />
+        <TextField value={description_th} onChange={this.setDescriptionTh}
+        hintText="Description TH" floatingLabelText="Description TH" style={{width:'100%'}} type="text" />
       </div>
     )
   }

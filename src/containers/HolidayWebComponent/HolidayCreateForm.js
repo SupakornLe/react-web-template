@@ -15,7 +15,7 @@ export default class HolidayCreateForm extends Component {
   }
   renderButtonSubmit=()=>{
     var {holiday} = this.state;
-    if(holiday.length>4!="" || 1){
+    if(holiday.length>4!=""){
       return (<div>
         <RaisedButton fullWidth={true} primary={true} backgroundColor='#03A9F4' label="Save" onClick={()=>this.submit()} />
       </div>);
@@ -31,9 +31,9 @@ export default class HolidayCreateForm extends Component {
     return(
       <div>
       <div><h2>Create Holiday</h2></div>
-      <FormHoliday value={holiday} setHoliday={this.setHoliday} />
-      <FormDescriptionTh value={description_th} setDescriptionTh={this.setDescriptionTh} />
-      <FormDescriptionEn value={description_en} setDescriptionEn={this.setDescriptionEn} />
+      <FormHoliday holiday={holiday} setHoliday={this.setHoliday} />
+      <FormDescriptionTh description_th={description_th} setDescriptionTh={this.setDescriptionTh} />
+      <FormDescriptionEn description_en={description_en} setDescriptionEn={this.setDescriptionEn} />
             <div>
               {this.renderButtonSubmit()}
             </div>
