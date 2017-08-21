@@ -4,10 +4,11 @@ import "react-table/react-table.css";
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import ContentClear from 'material-ui/svg-icons/content/clear';
-import UserTable from './UserTable.js';
-import UserButtonFloat from './UserButtonFloat.js';
-import UserCreateForm from './UserCreateForm.js';
-export default class UserMain extends Component{
+import TypeItemProductButtonFloat from './TypeItemProductButtonFloat';
+import TypeItemProductCreateForm from './TypeItemProductCreateForm';
+import TypeItemProductTable from './TypeItemProductTable';
+
+export default class TypeItemProductMain extends Component{
   constructor(props){
     super(props);
     this.state={
@@ -17,9 +18,9 @@ export default class UserMain extends Component{
   renderContent=()=>{
     var {content} = this.state;
     if(content == true){
-      return <UserTable />;
+      return <TypeItemProductTable />;
     }else {
-      return <UserCreateForm />
+      return <TypeItemProductCreateForm />
     }
   }
   toggleContent=()=>{
@@ -29,7 +30,7 @@ export default class UserMain extends Component{
     return(
        <div>
           {this.renderContent()}
-          <UserButtonFloat toggleContent={this.toggleContent} content={this.state.content} />
+          <TypeItemProductButtonFloat toggleContent={this.toggleContent} content={this.state.content} />
        </div>
     )
   }

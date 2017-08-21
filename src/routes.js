@@ -33,6 +33,7 @@ import ContactMain from './containers/ContactWebComponent/ContactMain';
 import HolidayMain from './containers/HolidayWebComponent/HolidayMain';
 import MonthMain from './containers/MonthWebComponent/MonthMain';
 import TaxiMain from './containers/TaxiWebComponent/TaxiMain';
+import TypeItemProductMain from './containers/TypeItemProductWebComponent/TypeItemProductMain';
 
 export default (
   <Route>
@@ -68,6 +69,7 @@ export default (
       <Route path="holidaymain" component={HolidayMain}/>
       <Route path="monthmain" component={MonthMain}/>
       <Route path="taximain" component={TaxiMain}/>
+      <Route path="typeitemproductmain" component={TypeItemProductMain}/>
 
       <Route path="*" component={NotFoundPage}/>
     </Route>

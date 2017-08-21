@@ -14,6 +14,7 @@ const data = {
     { text: 'Table Page', icon: <Web/>, link: '/table' },
     { text: 'Admin Role Main', icon: <GridOn />, link: '/rolemain'},
     { text: 'User Main', icon: <GridOn />, link: '/usermain'},
+    { text: 'Type Item Product Main', icon: <GridOn />, link: '/typeitemproductmain'},
     { text: 'Notifications Main', icon: <GridOn />, link: 'notificationsmain'},
     { text: 'Asset Main', icon: <GridOn />, link: 'assetmain'},
     { text: 'Contract Main', icon: <GridOn />, link: 'contractmain'},

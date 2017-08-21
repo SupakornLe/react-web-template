@@ -18,7 +18,8 @@ export default class AssetButtonFloat extends Component {
     super(props);
   }
   renderButton=()=>{
-    return (<FloatingActionButton onTouchTap = {()=>this.props.toggleContent()} backgroundColor='#03A9F4' style={styles.floatingActionButton}>
+    return (<FloatingActionButton onTouchTap = {()=>this.props.toggleContent()}
+    backgroundColor='#03A9F4' style={styles.floatingActionButton}>
       {
         (this.props.content)?<ContentAdd/>:<ContentClear />
       }
