@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import {NotificationsTableColumns} from './NotificationsTableColumns';
+import NotificationsDetail from './NotificationsDetail';
 export default class NotificationsTable extends Component {
   constructor(props){
     super(props);
@@ -9,9 +10,19 @@ export default class NotificationsTable extends Component {
       {sid:1,notifications:'knvdkvnodsknv',created_by:'Nut', created_datetime:'2017-07-01 08:00:00'},
       {sid:2,notifications:'vdsvmdokvnmdsv',created_by:'Mas', created_datetime:'2017-04-01 15:22:00'},
       {sid:3,notifications:'sdvmkdnvldsv',created_by:'Nat', created_datetime:'2017-01-01 18:55:00'},
-      ]}
+      ],
+      loaded:false
+    }
+  }
+  componentDidMount(){
+    this.loadData();
+  }
+  loadData=()=>{
+    //LOAD DATA FROM SERVER
+    this.setState({ loaded:true});
   }
   render(){
+    if(this.state.loaded){
     return(
       <div>
         <div>
@@ -26,8 +37,7 @@ export default class NotificationsTable extends Component {
              SubComponent={(row) => {
                return (
                  <div style={{padding: '20px'}}>
-                   <em>{row.row.created_by}</em><br />
-                   <em>{row.row.created_datetime}</em><br />
+                   <NotificationsDetail sid={row.original.sid} />
                  </div>
                )
              }}
@@ -35,5 +45,8 @@ export default class NotificationsTable extends Component {
       </div>
     </div>
     )
+    }else {
+      return (<div>Loading...</div>);
+    }
   }
 }
