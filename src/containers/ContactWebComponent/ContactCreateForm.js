@@ -1,18 +1,24 @@
 import React,{Component} from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import ContactFormName from './ContactFormName';
+import ContactFormEmail from './ContactFormEmail';
+import ContactFormMobile from './ContactFormMobile';
+import ContactFormPhone from './ContactFormPhone';
+import ContactFormCompany from './ContactFormCompany';
+import ContactFormEmpNo from './ContactFormEmpNo';
 export default class ContactCreateForm extends Component {
   constructor(props) {
-    super();
-    this.state = {contact:''}
+    super(props);
+    this.state = {name:'',email:'',mobile:'',phone:'',Company:'',emp_no:''}
   }
   submit = () => {
-   var {contact} = this.state;
+   var {name} = this.state;
    console.log(this.state.notifications);
   }
   renderButtonSubmit = () => {
-   var {contact} = this.state;
-   if(contact.length>4!=""){
+   var {name} = this.state;
+   if(name.length>4!=""){
      return (<div>
        <RaisedButton fullWidth={true} primary={true} backgroundColor='#03A9F4' label="Save" onClick={()=>this.submit()} />
      </div>);
@@ -20,16 +26,23 @@ export default class ContactCreateForm extends Component {
      return <spam />
    }
   }
+  setName=(name)=>this.setState({name});
+  setEmail=(email)=>this.setState({email});
+  setMobile=(mobile)=>this.setState({mobile});
+  setPhone=(phone)=>this.setState({phone});
+  setCompany=(company)=>this.setState({company});
+  setEmpNo=(emp_no)=>this.setState({emp_no});
   render(){
-    var {contact}=this.state;
+    var {name,email,mobile,phone,company,emp_no}=this.state;
     return(
       <div>
       <div><h2>Create Contact</h2></div>
-      <div>
-          <TextField value={contact}
-            onChange={(e)=>this.setState({contact:e.target.value})}
-            floatingLabelText="Contact" hintText="Contact" style={{width:'100%'}} type="text"  />
-      </div>
+      <ContactFormName name={name} setName={this.setName} />
+      <ContactFormEmail email={email} setEmail={this.setEmail} />
+      <ContactFormMobile mobile={mobile} setMobile={this.setMobile} />
+      <ContactFormPhone phone={phone} setPhone={this.setPhone} />
+      <ContactFormCompany company={company} setCompany={this.setCompany} />
+      <ContactFormEmpNo emp_no={emp_no} setEmpNo={this.setEmpNo} />
             <div>
               {this.renderButtonSubmit()}
             </div>

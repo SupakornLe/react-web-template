@@ -2,9 +2,10 @@ import React,{Component} from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import {ContactTableColumns} from './ContactTableColumns';
+import ContactDetail from './ContactDetail';
 export default class ContactTable extends Component {
   constructor(props){
-    super();
+    super(props);
       this.state =  {data:[
       {sid:1,contact:'knvdkvnodsknv',created_by:'Nut', created_datetime:'2017-07-01 08:00:00'},
       {sid:2,contact:'vdsvmdokvnmdsv',created_by:'Mas', created_datetime:'2017-04-01 15:22:00'},
@@ -26,8 +27,7 @@ export default class ContactTable extends Component {
              SubComponent={(row) => {
                return (
                  <div style={{padding: '20px'}}>
-                   <em>{row.row.created_by}</em><br />
-                   <em>{row.row.created_datetime}</em><br />
+                   <ContactDetail sid={row.original.sid} />
                  </div>
                )
              }}
